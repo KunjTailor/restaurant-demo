@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en" class="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Order & Reserve · Porta Blu</title>
+<meta name="description" content="Order Porta Blu for pickup or delivery, book a table for up to six, plan a large party in the back room, or send a gift card.">
+<!-- Demo site for a fictional restaurant: keep it out of search results. Remove this line for a real client. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FCFBF8">
+<meta name="format-detection" content="telephone=no">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Porta Blu">
+<meta property="og:title" content="Order & Reserve · Porta Blu">
+<meta property="og:description" content="Order Porta Blu for pickup or delivery, book a table for up to six, plan a large party in the back room, or send a gift card.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1632657606412-089f735aa87c?auto=format&fit=crop&w=1200&h=630&q=75">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232139B0'/%3E%3Cpath d='M9 26V14.5a7 7 0 0 1 14 0V26' fill='%23FCFBF8'/%3E%3Ccircle cx='19.2' cy='20.5' r='1.4' fill='%23F6CD4C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Porta Blu",
+  "servesCuisine": ["Italian", "Pizza"],
+  "priceRange": "$$",
+  "telephone": "+1-503-555-0143",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2130 SE Alder St",
+    "addressLocality": "Portland",
+    "addressRegion": "OR",
+    "postalCode": "97214",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "11:30", "closes": "21:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "11:30", "closes": "22:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "21:00" }
+  ],
+  "acceptsReservations": true,
+  "hasMenu": "menu.html"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-burger" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+  <symbol id="i-table" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+  <symbol id="i-parking" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></symbol>
+  <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16"/><path d="M8 15h.01"/><path d="M16 15h.01"/><path d="M7 18v3"/><path d="M17 18v3"/></symbol>
+  <symbol id="i-bike" viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></symbol>
+  <symbol id="i-access" viewBox="0 0 24 24"><circle cx="16" cy="4" r="1"/><path d="m18 19 1-7-6 1"/><path d="m5 8 3-3 5.5 3-2.36 3.5"/><path d="M4.24 14.5a5 5 0 0 0 6.88 6"/><path d="M13.76 17.5a5 5 0 0 0-6.88-6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="M5 12h14"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+  <symbol id="i-dough" viewBox="0 0 24 24"><ellipse cx="12" cy="14" rx="9" ry="6"/><path d="M7 12.5c1.5-1 3.2-1.5 5-1.5s3.5.5 5 1.5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></symbol>
+  <symbol id="i-brand" viewBox="0 0 24 28"><path d="M2 27V12a10 10 0 0 1 20 0v15" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M7 27V13.2a5 5 0 0 1 10 0V27Z" fill="currentColor" stroke="none"/><circle cx="14.4" cy="20.6" r="1.25" fill="#F6CD4C" stroke="none"/></symbol>
+</svg>
+
+<div class="announce">
+  Now booking holiday parties for November &amp; December · <a href="catering.html">Plan your catering</a>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Porta Blu home">
+      <svg class="brand-mark" viewBox="0 0 24 28" aria-hidden="true"><use href="#i-brand"/></svg>
+      <span>Porta Blu</span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html" aria-current="page">Order &amp; Reserve</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="visit.html">Visit</a></li>
+      </ul>
+      <a class="nav-phone" href="tel:+15035550143">Call (503) 555-0143</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+15035550143">(503) 555-0143</a>
+      <a class="btn btn-primary btn-sm" href="order.html">Order online</a>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+      <svg class="icon icon-open" aria-hidden="true"><use href="#i-burger"/></svg>
+      <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-hero" aria-labelledby="order-hero-title">
+  <div class="wrap page-hero-grid">
+    <div class="page-hero-copy">
+      <p class="eyebrow">Order &amp; reserve</p>
+      <h1 id="order-hero-title">However you’re hungry, the oven’s already hot</h1>
+      <p class="sub">Order direct for pickup and skip the app fees, get it delivered within four miles, or come sit at the counter and watch your pie go in.</p>
+      <p class="status page-hero-status" data-status>Open daily from 11:30 am</p>
+      <ul class="jump" aria-label="On this page">
+        <li><a href="#pickup">Pickup</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+        <li><a href="#reserve">Reserve a table</a></li>
+        <li><a href="#large-parties">Large parties</a></li>
+        <li><a href="#gift-cards">Gift cards</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <figure class="page-hero-media">
+      <img src="https://images.unsplash.com/photo-1632657606412-089f735aa87c?auto=format&fit=crop&w=900&h=1100&q=72" srcset="https://images.unsplash.com/photo-1632657606412-089f735aa87c?auto=format&fit=crop&w=480&h=587&q=72 480w, https://images.unsplash.com/photo-1632657606412-089f735aa87c?auto=format&fit=crop&w=720&h=880&q=72 720w, https://images.unsplash.com/photo-1632657606412-089f735aa87c?auto=format&fit=crop&w=1000&h=1222&q=72 1000w" sizes="(min-width: 900px) 40vw, 100vw" width="900" height="1100" alt="A cook sliding pizzas out at the pass, with finished pies stacked on plates in front of a tiled oven">
+    </figure>
+  </div>
+</section>
+
+<!-- Pickup -->
+<section class="section" id="pickup" aria-labelledby="pickup-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Pickup</p>
+        <h2 id="pickup-title">Order ahead, skip the wait</h2>
+        <p class="sub">Pickup runs from 11:30 am until 15 minutes before close. Most orders are ready in about 20 minutes; on Friday and Saturday nights, give us 30.</p>
+      </div>
+      <div class="head-actions">
+        <a class="btn btn-primary" href="#" data-demo="On a live site this opens the restaurant’s own online ordering (Toast, Square, ChowNow or similar).">
+          <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>Start a pickup order
+        </a>
+        <a class="btn btn-outline" href="tel:+15035550143">Or call it in</a>
+      </div>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <h3>Order online or by phone</h3>
+        <p>Pay ahead online, or call and pay when you arrive. Add special requests, like well-done crust or sauce on the side, at checkout.</p>
+      </li>
+      <li>
+        <h3>We text you when it’s ready</h3>
+        <p>Your order goes in the oven right before your pickup time, so it’s hot when you arrive, not sitting under a heat lamp.</p>
+      </li>
+      <li>
+        <h3>Grab it inside the blue door</h3>
+        <p>Pickup shelves are just to the left of the host stand. Staying in the car? Call when you pull up and we’ll run it out.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Delivery -->
+<section class="section section-wash" id="delivery" aria-labelledby="delivery-title">
+  <div class="wrap two-col">
+    <div>
+      <p class="eyebrow">Delivery</p>
+      <h2 class="h2" id="delivery-title">Delivered within four miles</h2>
+      <p class="sub">We partner with DoorDash and Uber Eats from 11:30 am to 9 pm daily. Pizzas ride in vented boxes so the crust stays crisp, and pasta travels in sealed tins you can reheat right in the oven.</p>
+      <div class="inline-actions">
+        <a class="btn btn-primary" href="#" data-demo="On a live site this opens the restaurant’s DoorDash storefront.">Order on DoorDash</a>
+        <a class="btn btn-outline" href="#" data-demo="On a live site this opens the restaurant’s Uber Eats storefront.">Order on Uber Eats</a>
+      </div>
+      <p class="small-note">Delivery prices and fees are set by each app. Ordering for 15 or more? <a href="catering.html">Catering</a> is cheaper and we deliver it ourselves.</p>
+    </div>
+    <div class="zone-card">
+      <h3>Neighborhoods we reach</h3>
+      <ul class="zones">
+        <li>Buckman</li><li>Sunnyside</li><li>Kerns</li><li>Laurelhurst</li><li>Richmond</li>
+        <li>Hosford-Abernethy</li><li>Belmont</li><li>Mt. Tabor</li><li>Hawthorne</li><li>Lloyd</li>
+        <li>Central Eastside</li><li>Downtown (east of the river)</li>
+      </ul>
+      <p class="small-note">Not sure you’re in range? Enter your address in either app, or call and we’ll tell you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Reserve -->
+<section class="section band" id="reserve" aria-labelledby="reserve-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Dine in</p>
+        <h2 id="reserve-title">Reserve a table</h2>
+        <p class="sub">We take reservations for 1 to 6 guests, up to 30 days ahead. We hold about a third of the room, the bar and the patio for walk-ins every night.</p>
+      </div>
+    </div>
+
+    <div class="reserve">
+      <div class="reserve-head">
+        <h3>Find a table</h3>
+        <p>Pick a party size, day and time.</p>
+      </div>
+      <form class="reserve-form" id="reserve-form" novalidate>
+        <div>
+          <label for="res-party">Party</label>
+          <select class="select-dark" id="res-party" name="party">
+            <option value="1">1 guest</option>
+            <option value="2" selected>2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+            <option value="6">6 guests</option>
+            <option value="7">7 or more</option>
+          </select>
+        </div>
+        <div class="field-date">
+          <label for="res-date">Date</label>
+          <select class="select-dark" id="res-date" name="date">
+            <option value="0">Today</option>
+            <option value="1">Tomorrow</option>
+          </select>
+        </div>
+        <div>
+          <label for="res-time">Time</label>
+          <select class="select-dark" id="res-time" name="time">
+            <option value="1140">7 pm</option>
+          </select>
+        </div>
+        <button class="btn btn-lemon" type="submit">Find a table</button>
+      </form>
+      <div class="reserve-results" id="reserve-results" aria-live="polite"></div>
+    </div>
+
+    <ul class="policies">
+      <li><strong>Running late?</strong> We hold tables for 15 minutes. Call and we’ll do our best to keep yours.</li>
+      <li><strong>Plans changed?</strong> Cancel or change up to 2 hours before. No card needed for parties under 7.</li>
+      <li><strong>Patio season</strong> runs April to October, with heaters and a canopy for Portland’s surprises.</li>
+      <li><strong>Little ones</strong> are welcome. We have high chairs, booster seats and crayons.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Large parties -->
+<section class="section" id="large-parties" aria-labelledby="parties-title">
+  <div class="wrap split split-reverse">
+    <figure class="split-media">
+      <img src="https://images.unsplash.com/photo-1622140739492-f82f386260b5?auto=format&fit=crop&w=900&h=1080&q=72" srcset="https://images.unsplash.com/photo-1622140739492-f82f386260b5?auto=format&fit=crop&w=480&h=576&q=72 480w, https://images.unsplash.com/photo-1622140739492-f82f386260b5?auto=format&fit=crop&w=720&h=864&q=72 720w, https://images.unsplash.com/photo-1622140739492-f82f386260b5?auto=format&fit=crop&w=1000&h=1200&q=72 1000w" sizes="(min-width: 900px) 45vw, 100vw" width="900" height="1080" loading="lazy" alt="A warm, wood-paneled dining room with long tables, bar stools and pendant lights">
+    </figure>
+    <div class="split-copy">
+      <p class="eyebrow">Large parties &amp; private dining</p>
+      <h2 id="parties-title">Birthdays, team dinners and rehearsal nights</h2>
+      <p class="sub">For groups of 7 or more we serve family-style: big platters of antipasti, a parade of pizzas, two pastas and dessert, passed down the table.</p>
+      <div class="options">
+        <div class="option">
+          <h3>The Long Table</h3>
+          <p class="option-meta">7 to 16 guests · in the main room</p>
+          <p>Our reclaimed-fir table runs right alongside the oven. Family-style menus from $45 per person.</p>
+        </div>
+        <div class="option">
+          <h3>The Back Room</h3>
+          <p class="option-meta">Up to 32 seated, 45 standing · semi-private</p>
+          <p>Its own entrance, a sound system and a screen for toasts. $800 food and drink minimum on weekends.</p>
+        </div>
+      </div>
+      <div class="inline-actions">
+        <a class="btn btn-primary" href="catering.html#quote">Plan a party</a>
+        <a class="btn btn-outline" href="tel:+15035550143">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>(503) 555-0143
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gift cards -->
+<section class="gift" id="gift-cards" aria-labelledby="gift-title">
+  <div class="wrap">
+    <div class="gift-card">
+      <div class="gift-art" aria-hidden="true">
+        <div class="gift-brand"><svg viewBox="0 0 24 28"><use href="#i-brand"/></svg><span>Porta Blu</span></div>
+        <div class="gift-bottom"><span class="gift-label">Gift card</span><span class="gift-amount">$50</span></div>
+      </div>
+      <div class="gift-copy">
+        <p class="eyebrow">Gift cards</p>
+        <h2 id="gift-title">Give someone a very good dinner</h2>
+        <p>Digital gift cards in any amount from $25, delivered by email in minutes. They never expire and work for dine-in, pickup and catering.</p>
+        <a class="btn btn-primary" href="#" data-demo="On a live site this opens the restaurant’s gift card store (Square, Toast or similar).">
+          <svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg>Buy a gift card
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-wrap">
+    <div>
+      <p class="eyebrow">Good to know</p>
+      <h2 class="h2" id="faq-title">Questions we get a lot</h2>
+      <p class="sub">Something else? Call us at <a href="tel:+15035550143">(503) 555-0143</a> during open hours.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Do you take walk-ins?</summary>
+        <p>Always. The bar, the patio and about a third of the dining room are held for walk-ins. On weekend nights the wait is usually 20 to 40 minutes; put your name down and we’ll text you when your table’s ready.</p>
+      </details>
+      <details>
+        <summary>Can I get a gluten-free pizza?</summary>
+        <p>Yes. Any pizza can be made on our gluten-free crust for $3, and any pasta can be swapped for gluten-free penne for $2. They’re cooked in a shared kitchen and oven, so we don’t recommend them for celiac guests.</p>
+      </details>
+      <details>
+        <summary>Is there anything vegan?</summary>
+        <p>The Marinara and our wood-roasted olives are vegan as they are. Most pizzas can be made vegan with cashew mozzarella for $2, and the kitchen can adapt several pastas. Just ask.</p>
+      </details>
+      <details>
+        <summary>Can I bring my own wine?</summary>
+        <p>Sure. Corkage is $20 per bottle, and we waive it for each bottle you buy from our list.</p>
+      </details>
+      <details>
+        <summary>Are dogs allowed?</summary>
+        <p>Well-behaved dogs are welcome on the patio, and we’ll bring out a water bowl.</p>
+      </details>
+      <details>
+        <summary>Do you have half-and-half pizzas?</summary>
+        <p>For pickup and delivery, yes: pick any two pies from the same section of the menu and we’ll charge for the higher one. In the dining room we keep them whole so they bake evenly.</p>
+      </details>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Porta Blu home">
+          <svg class="brand-mark" viewBox="0 0 24 28" aria-hidden="true"><use href="#i-brand"/></svg>
+          <span>Porta Blu</span>
+        </a>
+        <p>Wood-fired pizza and handmade pasta behind the blue door on SE Alder. Cooking in Southeast Portland since 2014.</p>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Visit</h2>
+        <ul class="footer-list">
+          <li>2130 SE Alder St</li>
+          <li>Portland, OR 97214</li>
+          <li><a href="tel:+15035550143">(503) 555-0143</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=2130+SE+Alder+St+Portland+OR+97214" target="_blank" rel="noopener">Get directions</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Hours</h2>
+        <ul class="footer-list footer-hours">
+          <li><span>Mon–Thu</span><span>11:30–9:30</span></li>
+          <li><span>Fri–Sat</span><span>11:30–10:30</span></li>
+          <li><span>Sunday</span><span>12–9</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Explore</h2>
+        <ul class="footer-list">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order &amp; Reserve</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="visit.html">Visit &amp; Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Porta Blu · <a href="#" data-demo="On a live site this opens the restaurant’s Instagram.">Instagram</a> · <a href="order.html#gift-cards">Gift cards</a></span>
+      <span>Concept site by LocalLift Web Studios</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-bar" aria-label="Quick actions">
+  <a href="tel:+15035550143">
+    <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call
+  </a>
+  <a href="menu.html">
+    <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>Menu
+  </a>
+  <a class="is-primary" href="order.html" aria-current="page">
+    <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>Order
+  </a>
+</nav>
+
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="assets/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" class="{{HTMLCLASS}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<!-- Demo site for a fictional restaurant: keep it out of search results. Remove this line for a real client. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FCFBF8">
+<meta name="format-detection" content="telephone=no">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Porta Blu">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232139B0'/%3E%3Cpath d='M9 26V14.5a7 7 0 0 1 14 0V26' fill='%23FCFBF8'/%3E%3Ccircle cx='19.2' cy='20.5' r='1.4' fill='%23F6CD4C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Porta Blu",
+  "servesCuisine": ["Italian", "Pizza"],
+  "priceRange": "$$",
+  "telephone": "+1-503-555-0143",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2130 SE Alder St",
+    "addressLocality": "Portland",
+    "addressRegion": "OR",
+    "postalCode": "97214",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "11:30", "closes": "21:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "11:30", "closes": "22:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "21:00" }
+  ],
+  "acceptsReservations": true,
+  "hasMenu": "menu.html"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>

@@ -39,7 +39,8 @@ To re-skin for a new client, change the color and font tokens at the top of
 ## Hosting
 
 `docs/` is plain HTML/CSS/JS. On GitHub: **Settings → Pages → Deploy from a branch →
-`main` / `/docs`**. It also works as-is on Netlify, Vercel or any static host.
+`main` / `/docs`**. On Vercel, import the repo; `vercel.json` already points it at `docs/`
+(no build step). It also works as-is on Netlify or any static host.
 
 Photos are from [Unsplash](https://unsplash.com) (free to use under the Unsplash License).
 The site includes `noindex` so the fictional restaurant stays out of search results;
